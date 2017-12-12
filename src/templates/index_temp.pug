@@ -7,10 +7,11 @@ html(lang="en")
     link(rel="icon" href="./assets/img/icons/favicon.ico" type="image/x-icon")
     link(rel="stylesheet", href="./assets/css/main.min.css")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js")
-    title Document
+    block title
+      title General default title
   body
     .wrapper
-      .container.works__container
-        header.header.heder__container
-    footer.footer
+      block content
+    footer.footer.footer__container
+      .copyrite © Владимир Астахов | создано с любовью в LoftSchool | 2016
     script(src="./assets/js/bundle.js")
