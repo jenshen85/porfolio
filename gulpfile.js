@@ -44,7 +44,7 @@
             dest:'dist/'
           },
           srcTemplates: {
-            src:'src/templates/common/*.pug'
+            src:'src/templates/**/*.pug'
           },
           svg: {
             src:'src/images/svg/**/*.svg',
