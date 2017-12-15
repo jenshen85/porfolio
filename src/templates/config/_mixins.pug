@@ -6,3 +6,22 @@ mixin section-title(val)
     .title__block
       h1.section__title= val
     .right-dash
+
+//- avatar
+
+mixin avatar(titles__name, titles__desc)
+  .avatar
+  .img__wrap
+    .avatar__img
+      img.img__image(src="./assets/img/elem/my_ava.jpg", alt="")
+  .avatar__titles
+    h2(class=`${titles__name}`) Шереверов Евгений
+    h4(class=`${titles__desc}`) Личный сайт веб разработчика
+
+//- arrow
+
+mixin arrow(direction)
+  .arrow(class=`${direction}`)
+    a(href="#").arrow__kink
+      svg.arrow-down__icon
+        use(xlink:href="./assets/img/icons/sprite/sprite.svg#arrow_down")

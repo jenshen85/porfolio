@@ -15,12 +15,9 @@ block content
       .works-hero__gamburger
         include ./../common/_gamburger_menu.pug
       .works-hero__avatar
-        include ./../common/_avatar
-      .works-hero__arrow
-        .arrow
-          a(href="#").arrow__kink
-            svg.arrow-down__icon
-              use(xlink:href="./assets/img/icons/sprite/sprite.svg#arrow_down")
+        +avatar('works-hero__avatar_name', 'works-hero__avatar_desc')
+      .works-hero__arrow-down
+        +arrow('arrow-down')
   section.section.works__main
     .container
       .main__title
@@ -97,3 +94,5 @@ block content
           .form__buttons
             button.button__send Отправить
             button.button__clear Очистить
+      .works-hero__arrow-up
+        +arrow('arrow-up')

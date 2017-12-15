@@ -76,9 +76,9 @@
         };
       })
     }))
-    .pipe(gP.pug())
+    .pipe(gP.pug({ pretty: true }))
     .pipe(gulp.dest(paths.templates.dest))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream({once: true}));
   };
 
 // styles
