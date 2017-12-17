@@ -1,4 +1,5 @@
 extends ../index_temp.pug
+include ./../config/_mixins.pug
 
 block title
   title Главная
@@ -10,7 +11,7 @@ block content
     .welcom__info
       .info__container
         .info__avatar
-          include ./../common/_avatar
+          +avatar('info__avatar_name', 'info__avatar_desc')
         .info__socials
           include ./../common/_social-list.pug
       .info__nav
