@@ -8,7 +8,7 @@ block content
   section.section.works-hero
     .container
       .bg-title.works-hero__bg-title
-        svg.portfolio-header__icon
+        svg.bg-title__icon.bg-title__icon--portfolio(preserveAspectRatio="none")
           use(xlink:href="./assets/img/icons/sprite/sprite.svg#portfolio_header")
       .works-hero__socials
         include ./../common/_social-list.pug
@@ -18,50 +18,64 @@ block content
         +avatar('works-hero__avatar_name', 'works-hero__avatar_desc')
       .works-hero__arrow-down
         +arrow('arrow-down')
-  section.section.works__main
+      .triangle
+        .tiangle__left
+          svg.tiangle__icon
+            use(xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_left")
+        .triangle__right
+          svg.tiangle__icon
+            use(xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_right")
+  section.section.works-main
     .container
-      .main__title
-        .triangle.main__title_triangle
-          .triangle-left
-            
-          .triangle-right
-            
-        .main-bg.main__title_bg
-          svg.main-bg__icon
+      .works-main__title
+        .works-main__bg-title.bg-title
+          svg.bg-title__icon.bg-title__icon--works(preserveAspectRatio="none")
             use(xlink:href="./assets/img/icons/sprite/sprite.svg#works_header")
-        +section-title('Мои работы')
-        .main__slider
-          .slider__desc
-            .slider__desc_container
-              .slider__desc_title
-              .slider__desc_technolgy
-              .slider__desc_link
-          .slider
-            .slider-top
-              .slider-top__slide
-              .slider-top__slide
-              .slider-top__slide
-            .slider-bottom
-              .slider-bottom__left
-                .slider-bottom__overley.slider__down
-                  .left__slide
-                  .left__slide
-                  .left__slide
-              .slider-bottom__right
-                .slider-bottom__overley.slider__up
-                  .right__slide
-                  .right__slide
-                  .right__slide            
+        +section-title('.works-main__title', 'Мои Работы')
+      .works-main__slider
+        .slider__desc
+          .slider__desc_container
+            .slider__desc_title
+              +subSection-title('.slider__title', 'Сайт школы онлайн Образования')
+            .slider__desc_technolgy
+              .desc_technolgy html, css, javascript
+            .slider__desc_link
+              .desc_link__wrap
+                a(href="#").desc_link__link
+                  .desc_link__cont
+                    svg.desc_link__icon(preserveAspectRatio="none")
+                      use(xlink:href="./assets/img/icons/sprite/sprite.svg#link")
+                    .desc_link__text Посмотреть сайт
+        .slider
+          .slider-top
+            .slider-top__slide
+            .slider-top__slide
+            .slider-top__slide
+          .slider-bottom
+            .slider-bottom__left
+              .slider-bottom__overley.slider__down
+                .left__slide
+                .left__slide
+                .left__slide
+            .slider-bottom__right
+              .slider-bottom__overley.slider__up
+                .right__slide
+                .right__slide
+                .right__slide            
   section.section.works-about
     .container
-      .works-about__bg-title
-        svg.about_header__icon
-            use(xlink:href="./assets/img/icons/sprite/sprite.svg#about_header")
-      +section-title('Что обо мне говорят')
+      .works-about__title
+        .bg-title.works-about__bg-title
+          svg.bg-title__icon.bg-title__icon--about
+              use(xlink:href="./assets/img/icons/sprite/sprite.svg#about_header")
+        +section-title('.works-about__title', 'Что обо мне Говорят')
       .works-about__feed
         ul.feed__list
           li.feed__item
             .feed__cont
+              .cont__quotes
+                svg.cont__quotes__icon
+                  use(xlink:href="./assets/img/icons/sprite/sprite.svg#quotes")
               .cont__text
                 p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
               .cont__autr
@@ -72,6 +86,9 @@ block content
                   h4.cont__title_desc основатель Loftschool
           li.feed__item
             .feed__cont
+              .cont__quotes
+                svg.cont__quotes__icon
+                  use(xlink:href="./assets/img/icons/sprite/sprite.svg#quotes")
               .cont__text
                 p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
               .cont__autr
@@ -81,14 +98,18 @@ block content
                   h2.cont__title_name Сабанцев Владимир
                   h4.cont__title_desc преподаватель
       .works-about__comn
-        .works-about__form
-          +section-title('Связаться со мной')
-          label.form__name(for="")
-            input(type="text" placeholder="Имя")
-          lable.form__mail
-            input(type="text" placeholder="Email")
-          lable.form__message
-            textarea(name="", cols="30", rows="10")
+        form(action="").form
+          .form__fields
+            +subSection-title('.form__title', 'Связаться со мной')
+            .form__name
+              label.form__name(for="")
+                input(type="text" placeholder="Имя")
+            .form__mail
+              lable.form__mail
+                input(type="text" placeholder="Email")
+            .form__message
+              lable.form__message
+                textarea(name="", cols="30", rows="10" placeholder="Ваше сообщение")
           .form__buttons
             button.button__send Отправить
             button.button__clear Очистить

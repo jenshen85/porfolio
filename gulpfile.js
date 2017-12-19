@@ -214,7 +214,7 @@
         baseDir: './dist/'
       }
     });
-    // browserSync.watch(['./dist/*.html', './dist/**/*.*'], browserSync.reload);
+    browserSync.watch(['./dist/*.html', './dist/**/*.*'], browserSync.reload);
   };
 
 // clean

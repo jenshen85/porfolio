@@ -14,7 +14,7 @@
       <section class="section works-hero">
         <div class="container">
           <div class="bg-title works-hero__bg-title">
-            <svg class="portfolio-header__icon">
+            <svg class="bg-title__icon bg-title__icon--portfolio" preserveAspectRatio="none">
               <use xlink:href="./assets/img/icons/sprite/sprite.svg#portfolio_header"></use>
             </svg>
           </div>
@@ -66,55 +66,81 @@
                   <use xlink:href="./assets/img/icons/sprite/sprite.svg#arrow_down"></use>
                 </svg></a></div>
           </div>
+          <div class="triangle">
+            <div class="tiangle__left">
+              <svg class="tiangle__icon">
+                <use xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_left"></use>
+              </svg>
+            </div>
+            <div class="triangle__right">
+              <svg class="tiangle__icon">
+                <use xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_right"></use>
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="section works__main">
+      <section class="section works-main">
         <div class="container">
-          <div class="main__title">
-            <div class="triangle main__title_triangle">
-              <div class="triangle-left"></div>
-              <div class="triangle-right"></div>
-            </div>
-            <div class="main-bg main__title_bg">
-              <svg class="main-bg__icon">
+          <div class="works-main__title">
+            <div class="works-main__bg-title bg-title">
+              <svg class="bg-title__icon bg-title__icon--works" preserveAspectRatio="none">
                 <use xlink:href="./assets/img/icons/sprite/sprite.svg#works_header"></use>
               </svg>
             </div>
-            <div class="main__title_title section__title">
+            <div class=".works-main__title">
               <div class="left-dash"></div>
               <div class="title__block">
-                <h1 class="section__title">Мои работы</h1>
+                <h1 class="section__title">Мои Работы</h1>
               </div>
               <div class="right-dash"></div>
             </div>
-            <div class="main__slider">
-              <div class="slider__desc">
-                <div class="slider__desc_container">
-                  <div class="slider__desc_title"></div>
-                  <div class="slider__desc_technolgy"></div>
-                  <div class="slider__desc_link"></div>
+          </div>
+          <div class="works-main__slider">
+            <div class="slider__desc">
+              <div class="slider__desc_container">
+                <div class="slider__desc_title">
+                  <div class=".slider__title">
+                    <div class="left-dash"></div>
+                    <div class="title__block">
+                      <h2 class="sub-section__title">Сайт школы онлайн Образования</h2>
+                    </div>
+                    <div class="right-dash"></div>
+                  </div>
+                </div>
+                <div class="slider__desc_technolgy">
+                  <div class="desc_technolgy">html, css, javascript</div>
+                </div>
+                <div class="slider__desc_link">
+                  <div class="desc_link__wrap"><a class="desc_link__link" href="#">
+                      <div class="desc_link__cont">
+                        <svg class="desc_link__icon" preserveAspectRatio="none">
+                          <use xlink:href="./assets/img/icons/sprite/sprite.svg#link"></use>
+                        </svg>
+                        <div class="desc_link__text">Посмотреть сайт</div>
+                      </div></a></div>
                 </div>
               </div>
-              <div class="slider">
-                <div class="slider-top">
-                  <div class="slider-top__slide"></div>
-                  <div class="slider-top__slide"></div>
-                  <div class="slider-top__slide"></div>
-                </div>
-                <div class="slider-bottom">
-                  <div class="slider-bottom__left">
-                    <div class="slider-bottom__overley slider__down">
-                      <div class="left__slide"></div>
-                      <div class="left__slide"></div>
-                      <div class="left__slide"></div>
-                    </div>
+            </div>
+            <div class="slider">
+              <div class="slider-top">
+                <div class="slider-top__slide"></div>
+                <div class="slider-top__slide"></div>
+                <div class="slider-top__slide"></div>
+              </div>
+              <div class="slider-bottom">
+                <div class="slider-bottom__left">
+                  <div class="slider-bottom__overley slider__down">
+                    <div class="left__slide"></div>
+                    <div class="left__slide"></div>
+                    <div class="left__slide"></div>
                   </div>
-                  <div class="slider-bottom__right">
-                    <div class="slider-bottom__overley slider__up">
-                      <div class="right__slide"></div>
-                      <div class="right__slide"></div>
-                      <div class="right__slide">           </div>
-                    </div>
+                </div>
+                <div class="slider-bottom__right">
+                  <div class="slider-bottom__overley slider__up">
+                    <div class="right__slide"></div>
+                    <div class="right__slide"></div>
+                    <div class="right__slide">           </div>
                   </div>
                 </div>
               </div>
@@ -124,22 +150,29 @@
       </section>
       <section class="section works-about">
         <div class="container">
-          <div class="works-about__bg-title">
-            <svg class="about_header__icon">
-              <use xlink:href="./assets/img/icons/sprite/sprite.svg#about_header"></use>
-            </svg>
-          </div>
-          <div class="main__title_title section__title">
-            <div class="left-dash"></div>
-            <div class="title__block">
-              <h1 class="section__title">Что обо мне говорят</h1>
+          <div class="works-about__title">
+            <div class="bg-title works-about__bg-title">
+              <svg class="bg-title__icon bg-title__icon--about">
+                <use xlink:href="./assets/img/icons/sprite/sprite.svg#about_header"></use>
+              </svg>
             </div>
-            <div class="right-dash"></div>
+            <div class=".works-about__title">
+              <div class="left-dash"></div>
+              <div class="title__block">
+                <h1 class="section__title">Что обо мне Говорят</h1>
+              </div>
+              <div class="right-dash"></div>
+            </div>
           </div>
           <div class="works-about__feed">
             <ul class="feed__list">
               <li class="feed__item">
                 <div class="feed__cont">
+                  <div class="cont__quotes">
+                    <svg class="cont__quotes__icon">
+                      <use xlink:href="./assets/img/icons/sprite/sprite.svg#quotes"></use>
+                    </svg>
+                  </div>
                   <div class="cont__text">
                     <p>Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
                   </div>
@@ -154,6 +187,11 @@
               </li>
               <li class="feed__item">
                 <div class="feed__cont">
+                  <div class="cont__quotes">
+                    <svg class="cont__quotes__icon">
+                      <use xlink:href="./assets/img/icons/sprite/sprite.svg#quotes"></use>
+                    </svg>
+                  </div>
                   <div class="cont__text">
                     <p>Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
                   </div>
@@ -169,28 +207,36 @@
             </ul>
           </div>
           <div class="works-about__comn">
-            <div class="works-about__form">
-              <div class="main__title_title section__title">
-                <div class="left-dash"></div>
-                <div class="title__block">
-                  <h1 class="section__title">Связаться со мной</h1>
+            <form class="form" action="">
+              <div class="form__fields">
+                <div class=".form__title">
+                  <div class="left-dash"></div>
+                  <div class="title__block">
+                    <h2 class="sub-section__title">Связаться со мной</h2>
+                  </div>
+                  <div class="right-dash"></div>
                 </div>
-                <div class="right-dash"></div>
+                <div class="form__name">
+                  <label class="form__name" for="">
+                    <input type="text" placeholder="Имя"/>
+                  </label>
+                </div>
+                <div class="form__mail">
+                  <lable class="form__mail">
+                    <input type="text" placeholder="Email"/>
+                  </lable>
+                </div>
+                <div class="form__message">
+                  <lable class="form__message">
+                    <textarea name="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                  </lable>
+                </div>
               </div>
-              <label class="form__name" for="">
-                <input type="text" placeholder="Имя"/>
-              </label>
-              <lable class="form__mail">
-                <input type="text" placeholder="Email"/>
-              </lable>
-              <lable class="form__message">
-                <textarea name="" cols="30" rows="10"></textarea>
-              </lable>
               <div class="form__buttons">
                 <button class="button__send">Отправить</button>
                 <button class="button__clear">Очистить</button>
               </div>
-            </div>
+            </form>
           </div>
           <div class="works-hero__arrow-up">
             <div class="arrow arrow-up"><a class="arrow__kink" href="#">

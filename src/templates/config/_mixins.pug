@@ -1,10 +1,17 @@
 //- section-title 
 
-mixin section-title(val)
-  .main__title_title.section__title
+mixin section-title(className, val)
+  div(class=`${className}`)
     .left-dash
     .title__block
       h1.section__title= val
+    .right-dash
+
+mixin subSection-title(className, val)
+  div(class=`${className}`)
+    .left-dash
+    .title__block
+      h2.sub-section__title= val
     .right-dash
 
 //- avatar

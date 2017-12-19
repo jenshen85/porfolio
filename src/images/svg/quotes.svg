@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:x="adobe:ns:meta/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32.950386"
+   height="28.282263"
+   viewBox="0 0 32.950386 28.282263"
+   version="1.1"
+   id="svg4492"
+   sodipodi:docname="quotes.svg"
+   inkscape:version="0.92.1 r15371">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview4494"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="18.482759"
+     inkscape:cx="16.5"
+     inkscape:cy="14.825"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4492" />
+  <metadata
+     id="metadata4485">
+<?xpacket begin="�" id="W5M0MpCehiHzreSzNTczkc9d"?>    <x:xmpmeta
+       x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+      <metadata>
+        <rdf:RDF>
+          <rdf:Description
+             rdf:about="" />
+          <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type
+               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            <dc:title></dc:title>
+          </cc:Work>
+        </rdf:RDF>
+      </metadata>
+    </x:xmpmeta>
+<?xpacket end="w"?>  </metadata>
+  <defs
+     id="defs4489">
+    <style
+       id="style4487">
+      .cls-1 {
+        font-size: 10.637px;
+        fill: #373e42;
+        font-family: FontAwesome;
+      }
+    </style>
+  </defs>
+  <text
+     id="_"
+     data-name=""
+     class="cls-1"
+     transform="scale(0.99288247,1.0071686)"
+     style="font-size:35.7394104px;font-family:FontAwesome;fill:#373e42;stroke-width:3.3599143"
+     y="28.080963"></text>
+</svg>

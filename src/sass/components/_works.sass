@@ -23,9 +23,9 @@
   transform: translate(-50%, -50%)
   width: 100%
   height: 40%
-  padding: 0 30px
+  padding: 0 20px
 
-.portfolio-header__icon
+.bg-title__icon--portfolio
   width: 100%
   height: 100%
 
@@ -64,21 +64,172 @@
   left: 50%
   transform: translateX(-50%)
 
-.triangle.main__title_triangle
+.triangle
+  width: 100%
+  position: absolute
+  bottom: -5px
+  left: 0
+  right: 0
   font-size: 0
 
-.triangle-left, .triangle-right
-  width: 50%
+.tiangle__left, .triangle__right
   display: inline-block
+  width: 50%
 
-.triangle-left__icon
-  fill: green
-
-.triangle-right__icon
-  fill: green
+.tiangle__icon
+  fill: #fff
+  width: 100%
 
 .works-hero__arrow-up
   transform: rotate(180deg)
   
-.works-about
+.works-about, .works__main
   position: relative
+
+.works-main__title, .works-about__title
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  padding: 55px 0 74px 0
+
+.works-main__bg-title, .works-about__bg-title
+  width: 100%
+  position: absolute
+  top: 40%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+.bg-title__icon--works, .bg-title__icon--about
+  width: 100%
+  fill: #6d7070
+
+//slider
+
+.works-main__slider
+  background-color: #f0efe9
+  display: flex
+  height: 750px
+
+.slider__desc, .slider
+  width: 50%
+
+.slider__desc
+  display: flex
+  justify-content: center
+  align-items: center
+
+.slider__desc_container
+  margin: 0 100px
+
+.slider__desc_title, .slider__desc_technolgy
+  margin-bottom: 40px
+
+.slider__desc_technolgy
+  font-family: 'roboto', serif
+  font-weight: 500
+  font-size: 16px
+  color: #20b5a1
+  text-align: center
+  text-transform: uppercase
+  border-top: 1px solid #20b5a1
+  border-bottom: 1px solid #20b5a1
+
+.desc_technolgy
+  padding: 20px 0
+
+.slider__desc_link
+  font-family: 'roboto', serif
+  font-weight: 500
+  font-size: 16px
+  text-align: center
+
+.desc_link__wrap
+  display: inline-block
+  background-color: #00bfa5
+  border-radius: 5px
+  transition: all 0.5s
+
+  &:hover
+    background-color: #048981
+
+.desc_link__link
+  display: block
+  color: #ffffff
+
+.desc_link__cont
+  display: flex
+  padding: 13px 10px
+
+.desc_link__icon
+  width: 20px
+  height: 20px
+  fill: #ffffff
+  margin-right: 10px
+
+.works-about__feed
+  margin-bottom: 70px
+
+.feed__list
+  width: 100%
+  display: flex
+
+.feed__item
+  width: 50%
+
+.feed__cont
+  width: 380px
+  margin: 0 auto
+
+.cont__quotes__icon
+  fill: #373e42
+  opacity: .2
+  width: 35px
+  height: 35px
+
+.cont__text, .cont__title_desc, .cont__title_name
+  font-family: 'roboto', serif
+  font-size: 16px
+  font-weight: 400
+  color: #455a64
+
+.cont__title_name
+  font-weight: 600
+  color: #20b5a1
+
+.cont__title_desc
+  color: #20b5a1
+
+.cont__img
+  width: 80px
+  height: 80px
+  border-radius: 50%
+  overflow: hidden
+
+.cont__img_pic
+  width: 80px
+
+// form
+
+.works-about__comn
+  display: flex
+  justify-content: center
+  align-items: center
+
+.works-about__form
+  background-color: #ffffff
+  border-radius: 5px
+
+//works-about
+
+.works-about
+  background-image: url('./../../assets/img/bg/work_bg_bottom.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center bottom
+
+.arrow-down__icon
+  width: 28px
+  height: 18px
+  fill: #ffffff
+  opacity: .8
