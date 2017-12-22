@@ -164,79 +164,83 @@
               <div class="right-dash"></div>
             </div>
           </div>
-          <div class="works-about__feed">
-            <ul class="feed__list">
-              <li class="feed__item">
-                <div class="feed__cont">
-                  <div class="cont__quotes">
-                    <svg class="cont__quotes__icon">
-                      <use xlink:href="./assets/img/icons/sprite/sprite.svg#quotes"></use>
-                    </svg>
-                  </div>
-                  <div class="cont__text">
-                    <p>Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
-                  </div>
-                  <div class="cont__autr">
-                    <div class="cont__img"><img class="cont__img_pic" src="./assets/img/elem/kovalchuk.jpg"/></div>
-                    <div class="cont__title">
-                      <h2 class="cont__title_name">Ковальчук Дмитрий</h2>
-                      <h4 class="cont__title_desc">основатель Loftschool</h4>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="feed__item">
-                <div class="feed__cont">
-                  <div class="cont__quotes">
-                    <svg class="cont__quotes__icon">
-                      <use xlink:href="./assets/img/icons/sprite/sprite.svg#quotes"></use>
-                    </svg>
-                  </div>
-                  <div class="cont__text">
-                    <p>Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
-                  </div>
-                  <div class="cont__autr">
-                    <div class="cont__img"><img class="cont__img_pic" src="./assets/img/elem/sabancev.jpg"/></div>
-                    <div class="cont__title">
-                      <h2 class="cont__title_name">Сабанцев Владимир</h2>
-                      <h4 class="cont__title_desc">преподаватель</h4>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
           <div class="works-about__comn">
-            <form class="form" action="">
-              <div class="form__fields">
-                <div class=".form__title">
-                  <div class="left-dash"></div>
-                  <div class="title__block">
-                    <h2 class="sub-section__title">Связаться со мной</h2>
+            <div class="works-about__feed">
+              <ul class="feed__list">
+                <li class="feed__item">
+                  <div class="feed__cont">
+                    <div class="cont__quotes">
+                      <svg class="cont__quotes__icon">
+                        <use xlink:href="./assets/img/icons/sprite/sprite.svg#quotes"></use>
+                      </svg>
+                    </div>
+                    <div class="cont__text">
+                      <p>Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
+                    </div>
+                    <div class="cont__autr">
+                      <div class="cont__img"><img class="cont__img_pic" src="./assets/img/elem/kovalchuk.jpg"/></div>
+                      <div class="cont__title">
+                        <h2 class="cont__title_name">Ковальчук Дмитрий</h2>
+                        <h4 class="cont__title_desc">основатель Loftschool</h4>
+                      </div>
+                    </div>
                   </div>
-                  <div class="right-dash"></div>
-                </div>
-                <div class="form__name">
-                  <label class="form__name" for="">
-                    <input type="text" placeholder="Имя"/>
-                  </label>
-                </div>
-                <div class="form__mail">
-                  <lable class="form__mail">
-                    <input type="text" placeholder="Email"/>
-                  </lable>
-                </div>
-                <div class="form__message">
-                  <lable class="form__message">
-                    <textarea name="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
-                  </lable>
-                </div>
+                </li>
+                <li class="feed__item">
+                  <div class="feed__cont">
+                    <div class="cont__quotes">
+                      <svg class="cont__quotes__icon">
+                        <use xlink:href="./assets/img/icons/sprite/sprite.svg#quotes"></use>
+                      </svg>
+                    </div>
+                    <div class="cont__text">
+                      <p>Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
+                    </div>
+                    <div class="cont__autr">
+                      <div class="cont__img"><img class="cont__img_pic" src="./assets/img/elem/sabancev.jpg"/></div>
+                      <div class="cont__title">
+                        <h2 class="cont__title_name">Сабанцев Владимир</h2>
+                        <h4 class="cont__title_desc">преподаватель</h4>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="works-about__form-wrap">
+              <div class="works-about__form">
+                <form class="form" action="">
+                  <div class="form__fields">
+                    <div class="form__title">
+                      <div class="left-dash"></div>
+                      <div class="title__block">
+                        <h2 class="sub-section__title">Связаться со мной</h2>
+                      </div>
+                      <div class="right-dash"></div>
+                    </div>
+                    <div class="form__row">
+                      <label class="form__label form__name" for="name">
+                        <input class="form__imput" id="name" type="text" placeholder="Имя"/>
+                      </label>
+                    </div>
+                    <div class="form__row">
+                      <label class="form__label form__mail" for="mail">
+                        <input class="form__imput" id="mail" type="text" placeholder="Email"/>
+                      </label>
+                    </div>
+                    <div class="form__row">
+                      <lable class="form__label form__message" for="message">
+                        <textarea class="form__imput form__imput--textarea" id="message" name="textarea" placeholder="Ваше сообщение"></textarea>
+                      </lable>
+                    </div>
+                  </div>
+                  <div class="form__buttons">
+                    <button class="button__send">Отправить</button>
+                    <button class="button__clear">Очистить</button>
+                  </div>
+                </form>
               </div>
-              <div class="form__buttons">
-                <button class="button__send">Отправить</button>
-                <button class="button__clear">Очистить</button>
-              </div>
-            </form>
+            </div>
           </div>
           <div class="works-hero__arrow-up">
             <div class="arrow arrow-up"><a class="arrow__kink" href="#">

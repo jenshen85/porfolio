@@ -69,49 +69,52 @@ block content
           svg.bg-title__icon.bg-title__icon--about
               use(xlink:href="./assets/img/icons/sprite/sprite.svg#about_header")
         +section-title('.works-about__title', 'Что обо мне Говорят')
-      .works-about__feed
-        ul.feed__list
-          li.feed__item
-            .feed__cont
-              .cont__quotes
-                svg.cont__quotes__icon
-                  use(xlink:href="./assets/img/icons/sprite/sprite.svg#quotes")
-              .cont__text
-                p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-              .cont__autr
-                .cont__img
-                  img(src="./assets/img/elem/kovalchuk.jpg").cont__img_pic
-                .cont__title
-                  h2.cont__title_name Ковальчук Дмитрий
-                  h4.cont__title_desc основатель Loftschool
-          li.feed__item
-            .feed__cont
-              .cont__quotes
-                svg.cont__quotes__icon
-                  use(xlink:href="./assets/img/icons/sprite/sprite.svg#quotes")
-              .cont__text
-                p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-              .cont__autr
-                .cont__img
-                  img(src="./assets/img/elem/sabancev.jpg").cont__img_pic
-                .cont__title
-                  h2.cont__title_name Сабанцев Владимир
-                  h4.cont__title_desc преподаватель
       .works-about__comn
-        form(action="").form
-          .form__fields
-            +subSection-title('.form__title', 'Связаться со мной')
-            .form__name
-              label.form__name(for="")
-                input(type="text" placeholder="Имя")
-            .form__mail
-              lable.form__mail
-                input(type="text" placeholder="Email")
-            .form__message
-              lable.form__message
-                textarea(name="", cols="30", rows="10" placeholder="Ваше сообщение")
-          .form__buttons
-            button.button__send Отправить
-            button.button__clear Очистить
+        .works-about__feed
+          ul.feed__list
+            li.feed__item
+              .feed__cont
+                .cont__quotes
+                  svg.cont__quotes__icon
+                    use(xlink:href="./assets/img/icons/sprite/sprite.svg#quotes")
+                .cont__text
+                  p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                .cont__autr
+                  .cont__img
+                    img(src="./assets/img/elem/kovalchuk.jpg").cont__img_pic
+                  .cont__title
+                    h2.cont__title_name Ковальчук Дмитрий
+                    h4.cont__title_desc основатель Loftschool
+            li.feed__item
+              .feed__cont
+                .cont__quotes
+                  svg.cont__quotes__icon
+                    use(xlink:href="./assets/img/icons/sprite/sprite.svg#quotes")
+                .cont__text
+                  p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                .cont__autr
+                  .cont__img
+                    img(src="./assets/img/elem/sabancev.jpg").cont__img_pic
+                  .cont__title
+                    h2.cont__title_name Сабанцев Владимир
+                    h4.cont__title_desc преподаватель
+        .works-about__form-wrap
+          .works-about__form
+            form(action="").form
+              .form__fields
+                +subSection-title('form__title', 'Связаться со мной')
+                .form__row
+                  label(for="name" class="form__label form__name")
+                    input(id="name" type="text" placeholder="Имя" class="form__imput")
+                .form__row
+                  label(for="mail" class="form__label form__mail")
+                    input(id="mail" type="text" placeholder="Email" class="form__imput")
+                .form__row
+                  lable(for="message" class="form__label form__message")
+                    textarea(id="message" class="form__imput form__imput--textarea"
+                    name="textarea" placeholder="Ваше сообщение")
+              .form__buttons
+                button.button__send Отправить
+                button.button__clear Очистить
       .works-hero__arrow-up
         +arrow('arrow-up')

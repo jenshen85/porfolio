@@ -193,6 +193,9 @@
   font-weight: 400
   color: #455a64
 
+.cont__text
+  margin-bottom: 30px
+
 .cont__title_name
   font-weight: 600
   color: #20b5a1
@@ -209,24 +212,85 @@
 .cont__img_pic
   width: 80px
 
-// form
-
-.works-about__comn
+.cont__autr
   display: flex
-  justify-content: center
-  align-items: center
+
+.cont__img
+  margin-right: 20px
+
+// form
 
 .works-about__form
   background-color: #ffffff
   border-radius: 5px
+  display: inline-block
+  overflow: hidden
+
+.works-about__form-wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  padding-bottom: 155px
+
+.form__title
+  margin-bottom: 37px
+
+.form__row
+  margin-bottom: 20px
+
+  &:last-child
+    margin-bottom: 0
+
+.form__fields
+  padding: 40px 20px 20px
+
+.form__imput
+  width: 100%
+  border: 1px solid #373e42
+  border-radius: 7px
+  font-family: 'roboto', serif
+  font-size: 16px
+  font-weight: 400
+  color: #373e42
+  opacity: .5
+  outline: transparent
+
+.form__imput
+  padding: 17px 20px
+
+.form__imput--textarea
+  height: 140px
+  resize: none
+
+.form__buttons
+  display: flex
+
+.button__send, .button__clear
+  font-family: 'roboto', serif
+  font-size: 16px
+  font-weight: 500
+  width: 50%
+  padding: 15px 0
+  color: #ffffff
+  background-color: #268c8c
+  border: transparent
+  transition: all .5s
+  border-right: 1px solid  #ffffff
+  cursor: pointer
+
+  &:last-child
+    border-right: transparent
+
+  &:hover
+    background-color: #26bbaa
 
 //works-about
 
-.works-about
+.works-about__comn
   background-image: url('./../../assets/img/bg/work_bg_bottom.png')
   background-repeat: no-repeat
   background-size: cover
-  background-position: center bottom
+  background-position: center top
 
 .arrow-down__icon
   width: 28px
