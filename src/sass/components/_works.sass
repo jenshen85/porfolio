@@ -1,6 +1,6 @@
 .works-hero
   width: 100%
-  height: 100%
+  height: 100vh
   position: relative
   background-image: url("./../../assets/img/bg/works_bg.jpg")
   background-size: cover
@@ -58,11 +58,12 @@
   opacity: .8
   color: #fff
 
-.works-hero__arrow-down, .works-hero__arrow-up
+.works-hero__arrow-down
   position: absolute
   bottom: 75px
   left: 50%
   transform: translateX(-50%)
+  z-index: 20
 
 .triangle
   width: 100%
@@ -230,7 +231,7 @@
   display: flex
   align-items: center
   justify-content: center
-  padding-bottom: 155px
+  padding-bottom: 70px
 
 .form__title
   margin-bottom: 37px
@@ -297,3 +298,10 @@
   height: 18px
   fill: #ffffff
   opacity: .8
+
+.arrow__link
+  display: inline-block
+
+.works-hero__arrow-up
+  padding-top: 217px
+  text-align: center

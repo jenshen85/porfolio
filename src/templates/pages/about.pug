@@ -1,7 +1,28 @@
 extends ../template.pug
+include ./../config/_mixins.pug
 
 block title
   title Обо мне
 
 block content
-  section.section
+  section.section.works-hero
+    .container
+      .bg-title.works-hero__bg-title
+        svg.bg-title__icon.bg-title__icon--portfolio(preserveAspectRatio="none")
+          use(xlink:href="./assets/img/icons/sprite/sprite.svg#portfolio_header")
+      .works-hero__socials
+        include ./../common/_social-list.pug
+      .works-hero__gamburger
+        include ./../common/_gamburger_menu.pug
+      .works-hero__avatar
+        +avatar('works-hero__avatar_name', 'works-hero__avatar_desc')
+      .works-hero__arrow-down
+        +arrow('arrow-down')
+      .triangle
+        .tiangle__left
+          svg.tiangle__icon
+            use(xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_left")
+        .triangle__right
+          svg.tiangle__icon
+            use(xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_right")
+  
