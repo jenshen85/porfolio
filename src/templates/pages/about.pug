@@ -19,10 +19,57 @@ block content
       .works-hero__arrow-down
         +arrow('arrow-down')
       .triangle
-        .tiangle__left
+        .tiangle__left.triangle__left--about
           svg.tiangle__icon
             use(xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_left")
-        .triangle__right
+        .triangle__right.triangle__right--about
           svg.tiangle__icon
             use(xlink:href="./assets/img/icons/sprite/sprite.svg#my_about_bg_right")
-  
+  section.section.about-my.container
+    .about-my__info
+      .about-my__info_titles
+        +section-title('about-my__titles_', 'Обо мне')
+      .about-my__img
+        .about-my__ava
+          img(src="./assets/img/elem/my_ava.jpg", alt="").about-my__ava_pic
+      .about-my__desc
+        .about-my__desc_title
+          +subSection-title('about-my__subtitle', 'Кто я')
+        .about-my__desc_text
+          .about-my__cont 
+            p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+    .about-my__skills
+      .about-my__skills_title
+        +subSection-title('about-my__skillssubtitle', 'Чем я могу быть вам полезен')
+      .about-my__skills_desc
+        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+      .about-my__my-skills
+        .my-skills
+          .my-skills__list
+            li.my-skills__block
+                .my-skills__title
+                .my-skills__list_wrap
+                  ul.my-skills__list
+                    li.my-skills__item
+                    li.my-skills__item
+                    li.my-skills__item
+            li.my-skills__block
+              .my-skills__title
+                .my-skills__list_wrap
+                  ul.my-skills__list
+                    li.my-skills__item
+                    li.my-skills__item
+                    li.my-skills__item
+                    li.my-skills__item
+            li.my-skills__block
+              .my-skills__title
+                .my-skills__list_wrap
+                  ul.my-skills__list
+                    li.my-skills__item
+                    li.my-skills__item
+                    li.my-skills__item
+  section.section.map
+    .map_container
+    .map_contacts
+           
